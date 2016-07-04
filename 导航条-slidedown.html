@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>tabAlter-test</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 18px;
+	}
+	p{
+		font-weight: bold;
+		background-color: #eee;
+		padding:10px;
+		border-bottom:1px solid lightGrey;
+	}
+	#nvbar{
+       width:298px;
+       margin:50px auto;
+       border:1px solid lightGrey;
+	}
+    #nvbar div ul{
+    	display:none;
+    }
+    li{
+		margin:8px 10px;
+	}
+</style>
+</head>
+<body>
+    <div id="nvbar">
+    	<div>
+     <p>Web前端</p>
+     <ul style="display:block">
+     	<li>JavaScript</li>
+     	<li>DIV+CSS</li>
+     	<li>jQuery</li>
+     </ul>
+ </div>
+ <div>
+     <p>后台脚本</p>
+     <ul >
+     	<li>PHP</li>
+     	<li>ASP.net</li>
+     	<li>JSP</li>
+     </ul>
+ </div>
+ <div>
+     <p>前端框架</p>
+     <ul>
+     	<li>Extjs</li>
+     	<li>Esspress</li>
+     	<li>YUI</li>
+     </ul>
+    </div>
+</div>
+    <script type="text/javascript">
+ 	 var nvbar = document.getElementById("nvbar");
+       var tit =  nvbar.getElementsByTagName('p');
+       var  list = nvbar.getElementsByTagName("ul");
+
+           for(var i in tit){
+           	tit[i].id=i;
+           	tit[i].onclick=function(){
+           		var x = list[this.id];
+           		if(x.style.display=="block"){
+           			x.style.display="none";
+           		}else{
+           			x.style.display="block";
+           		}
+           	}
+           }
+       
+    </script>
+</body>
+</html>
