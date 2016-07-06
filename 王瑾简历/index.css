@@ -1,0 +1,94 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+body{
+	background-color:black;
+}
+#nvbar{
+	position:fixed;
+	top:50%;
+	transform:translateY(-50%);
+}
+#nvbar ul{
+	color:#9FB6CD;
+}
+#nvbar ul li{
+	padding:10px 0;
+	margin:20px 0;
+	width:160px;
+	border:1px solid;
+	text-align: center;
+	font-family:"微软雅黑";
+	position:relative;
+}
+#nvbar ul li #rope{
+	position:absolute;
+	width:40px;
+	border-top:1px solid lightcoral;
+	top:20px;
+	left:-41px;
+}
+#nvbar ul li.active{
+	position:relative;
+	left:40px;
+	color:lightcoral;
+}
+.container{
+	height:100%;
+	width:80%;
+	margin:0 auto;	
+}
+.box{
+	height:100%;
+	width:600px;
+	margin:0 auto;	
+}
+#msgList{
+	margin-top:90px;
+	margin-bottom:90px;
+}
+#msgList li.show{
+	display:block;
+}
+img{
+	display:block;
+	height:200px;
+	width:200px;
+	margin:0 auto;
+	border:3px solid #9FB6CD;
+	border-radius:100%;
+}
+i{
+	color:#9FB6CD;
+}
+.contact{
+	width:300px;
+	margin:20px auto;
+	color:#9FB6CD;
+	font-size:18px;
+}
+.contact li{
+	text-align: center;
+	padding:10px 0;
+}
+.box{
+	color:#9FB6CD;
+	font-family: "微软雅黑";
+}
+.msg p,.skill p,.work p,.self-value p{
+	margin-top:18px;
+	text-indent: 2em;
+	line-height:1.5em;
+}
+.msg p span{
+	color:lightcoral;
+}
+.msg li,.skill li,.work li,.self-value p{
+	padding:15px 0;
+}
+.work a{
+	color:#9FB6CD;
+}

@@ -1,0 +1,221 @@
+
+body,html{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: "Microsoft Yahei";
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+   color: white;
+}
+.fa-circle {
+  color: #fff;
+}
+.fa-cloud, .fa-compass, .fa-flask, .fa-shield, .fa-facebook, .fa-twitter, .fa-dribbble {
+  color: SteelBlue;
+}
+#homepage {
+  height:100%;
+  width:100%;
+  background: url(pics1/background.png) 0 0 no-repeat;
+  background-size:cover;
+  margin-bottom:0;
+}
+.content1 {
+  text-align: center;
+  padding-top: 230px;
+  padding-bottom: 230px;
+  line-height: 25px;
+}
+.content1 h1 {
+  font-size: 55px;
+}
+.content1 p {
+  font-size: 25px;
+}
+.a0 {
+  display:block;
+  width: 130px;
+  margin: 0 auto;
+  background-color:Grey;
+  color: white;
+  padding: 12px;
+}
+.content2{
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  line-height: 30px;
+}
+.line1 {
+  font-size: 25px;
+}
+.line2 {
+  font-family: Arial;
+  font-size: 20px;
+}
+.line2 a:hover {
+  color: black;
+  border-bottom: 1px solid;
+}
+
+#servicepage {
+  background-color: SteelBlue;
+  position: relative;
+  padding-bottom: 65px;
+  padding-top: 65px;
+}
+.header1 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.underline{
+  width: 80px;
+  border-bottom: 2px solid white;
+  margin: 25px auto;
+}
+.list1 {
+  width: 880px;
+  margin:0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+.list1 li {
+  width: 200px;
+  float: left;
+  margin-right:20px;
+  text-align: center;
+}
+.iconname {
+  font-weight: bold;
+  color: white;
+}
+.list1 a {
+  font-size:12px;
+  height: 40px;
+  line-height: 40px;
+  background-color:white;
+  padding: 10px;
+  color: black;
+}
+.list1 a:hover{
+  background-color:LightGrey;
+}
+#pic {
+  background: url(pics1/2.jpg) 0 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+#pic p {
+  color: white;
+  font-weight: bold;
+  font-size: 55px;
+  padding-top:200px;
+  padding-bottom: 200px; 
+  margin: 0;
+}
+
+#displaypage p {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 40px;
+}
+.underline2{
+  margin: 0 auto;
+  width: 80px;
+  border-bottom: 2px solid Grey;
+  padding-top: 20px;
+}
+.graphs {
+  width:1060px;
+  margin:15px auto;
+  padding: 0;
+}
+.graphs:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.graphs li{
+  border: 15px solid white;
+  width:500px;
+  float:left;
+}
+#displaypage a {
+  display: block;
+  text-align: center;
+  height:30px;
+  width:120px;
+  line-height: 30px;
+  margin: 0 auto;
+  background-color: Grey;
+  color: white;
+}
+#displaypage a:hover{
+  background-color:DimGrey;
+}
+
+#button {
+  background-color: SteelBlue;
+  text-align:center;
+  padding: 70px 0;
+  margin-top: 15px;
+}
+#button p {
+  color: white;
+  font-size: 20px;
+}
+.a1,.a2 {
+  display:inline-block;
+  height: 25px;
+  width: 100px;
+  padding: 10px;
+  margin:0 auto;
+}
+.a1 {
+  background-color: white;
+  color: black;
+  margin-right: 20px;
+}
+.a2 {
+  background-color: blue;
+  color: white;
+}
+.a1:hover{
+  background-color:LightBlue;
+}
+.a2:hover {
+  background-color: #191970;
+}
+
+#lastpage{
+  padding-top: 40px;
+   text-align: center;
+}
+.container a:hover {
+  border-bottom: 1px solid;
+  color: black;
+}
+.icon {
+   width: 160px;
+   margin: 0 auto;
+   margin-bottom: 20px;
+}
+.icon li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+}
+.underline3{
+  width: 80px;
+  border-bottom: 2px solid Grey;
+  margin: 0 auto;
+}
+#lastpage p{
+   line-height: 1.5em;
+}

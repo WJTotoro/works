@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>王瑾-Jessie 前端求职简历</title>
+	</head>
+	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="fonts/font-awesome.css" />
+	<link rel="stylesheet" href="fonts/font-awesome.min.css" />
+	<body>
+		<div id="nvbar">
+			<ul>
+				<li class="active">个人信息及联系方式<div id="rope"></div></li>
+				<li>教育背景<div id="rope"></div></li>
+				<li>掌握技能<div id="rope"></div></li>
+				<li>作品展示<div id="rope"></div></li>
+				<li>个人评价<div id="rope"></div></li>
+			</ul>
+		</div>
+		
+		<div id="displayArea">
+			<ul id="msgList">
+				<li class="show">
+					<div class="personalIntroduc container">
+			           <div class="intro box">
+				            <img src="pic3.jpg" alt="" />
+				            <ul class="contact">
+					           <li>姓名：王瑾</li>
+					           <li>年龄：21</li>
+					           <li>籍贯：四川省成都市</li>
+					           <li>应聘岗位：web前端工程师</li>
+					           <li class="mailbox"><i class="fa fa-fw fa-envelope-o"></i>&nbsp995616357@qq.com</li>
+					           <li class="phonenumber"><i class="fa fa-fw fa-phone"></i>&nbsp18725058670</li>
+				            </ul>
+			           </div>
+		            </div>
+				</li>
+				<li style="display:none">
+					<div class="eduBackground container">
+						<div class="msg box">
+							<ul>
+								<li>
+									<h2>毕业院校</h2>
+							        <p>2012.9-2016.7就读于<span>云南大学（211）软件学院网络工程系</span>，主修课程有：C语言、数据库、计算机网络及其原理、面向对象编程语言、数据结构、Web的开发与实践等。</p>
+								</li>
+								<li>
+									<h2>技能证书</h2>
+									<p>CET-6</p>
+								</li>
+								<li>
+									<h2>曾任职务</h2>
+									<p>曾任院学生会文艺部副部长，校内社团动物之友社副社长</p>
+								</li>
+								<li>
+									<h2>项目经验</h2>
+									<p>大四实践课程小组搭建云南省消防网校系统，负责编写需求分析、进度表等文档报告和用户注册部分的源码。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				
+				<li style="display:none">
+					<div class="skillsIntroduc container">
+						<div class="skill box">
+							<ul class="skills" style="square">
+								<li>
+									<h2>HTML（5）/CSS（3）</h2>
+									<p>熟悉盒模型、浮动、定位、css选择器、BFC等核心概念，能够熟练运用html/css编写符合W3C规范的常见页面和导航栏样式，对于css的兼容有一定的经验。</p>
+								</li>
+								<li>
+									<h2>JavaScript</h2>
+									<p>熟悉JS渲染机制和原生JS的使用，掌握了事件代理、DOM操作、闭包、Ajax、轮播等概念和使用方法，能够封装函数库实现Ajax接口、Tab切换、事件代理等。</p>
+								</li>
+								<li>
+									<h2>jQuery</h2>
+									<p>能够熟练运用jQuery库实现常见页面效果。</p>
+								</li>
+								<li>
+									<h2>开发工具/后台语言</h2>
+									<p>能够熟练使用git、SAE、Sublime、Apache等相关工具，了解PHP、C等后端语言，可以处理好相关接口问题。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				
+				<li style="display:none">
+					<div class="workDisplay container">
+						<div class="work box">
+							<ul>
+								<li>
+									<h2>个人博客(github)</h2>
+									<p><a target="_blank" href="https://github.com/WJTotoro/works">https://github.com/WJTotoro/works</a></p>	
+								</li>
+								<li>
+									<h2>笔记博客(简书)</h2>
+									<p><a target="_blank" href="http://www.jianshu.com/users/51cb98dbdfe3/latest_articles">http://www.jianshu.com/users/51cb98dbdfe3/latest_articles</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				
+				<li style="display:none">
+					<div class="self-value container">
+						<div class="self-value box">
+							<h2>个人评价和需求阐述</h2>
+							<p>自学过程中主要浏览W3School、慕课网和牛客网等网站，基础部分基本掌握，正在寻找更优秀的发展平台，希望学到更多东西，能够得到充分的锻炼。</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script src="jquery-3.0.0.min.js"></script>
+	    <script>
+		var $nvguide = $("#nvbar ul"),
+            $showPart = $("#msgList").children().find("li"),
+            $msgList = $("#msgList"),
+            $list = $msgList.children();
+           
+        $nvguide.on("click","li",function(){
+        	console.log($(this).index());
+            $idx = $(this).index();
+    	    $(this).siblings().removeClass("active");
+    	    $(this).addClass("active");
+    	    $list.filter(".show").hide();
+    	    $list.eq($idx).addClass("show").fadeIn(2000);
+    });
+	</script>
+	</body>
+</html>
